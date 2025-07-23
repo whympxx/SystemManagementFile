@@ -1,0 +1,31 @@
+# Disable direct access to uploaded files
+# Only allow access through download.php
+
+<Files "*">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Allow access to image files for preview (optional, remove if not needed)
+<FilesMatch "\.(jpg|jpeg|png|gif|bmp|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Prevent execution of PHP files
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Disable server-side includes
+Options -Includes -ExecCGI
+
+# Remove server signature
+ServerSignature Off
+
+# Prevent access to backup files
+<FilesMatch "\.(bak|backup|swp|tmp)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

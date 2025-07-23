@@ -1,0 +1,52 @@
+[22-Jul-2025 18:39:38 Europe/Berlin] Upload attempt started
+[22-Jul-2025 18:39:38 Europe/Berlin] File uploaded successfully: ID=1, File=1753202378_3dc26f18c9157fbe.pdf
+[22-Jul-2025 19:14:07 Europe/Berlin] Upload attempt started
+[22-Jul-2025 19:14:07 Europe/Berlin] File uploaded successfully: ID=2, File=1753204447_9a4823f566338e84.png
+[22-Jul-2025 22:39:01 Europe/Berlin] Upload attempt started
+[22-Jul-2025 22:39:01 Europe/Berlin] File uploaded successfully: ID=3, File=1753216741_56a4f0a97e372f65.png
+[22-Jul-2025 22:40:24 Europe/Berlin] Upload attempt started
+[22-Jul-2025 22:40:24 Europe/Berlin] File uploaded successfully: ID=4, File=1753216824_cb561d57abaf2365.png
+[23-Jul-2025 03:49:00 Europe/Berlin] Upload attempt started
+[23-Jul-2025 03:49:00 Europe/Berlin] File uploaded successfully: ID=5, File=1753235340_448af205fc1536b1.png
+[23-Jul-2025 05:52:59 Europe/Berlin] Upload attempt started
+[23-Jul-2025 05:52:59 Europe/Berlin] File uploaded successfully: ID=13, File=1753242779_42f60b70ae59ad76.jpg
+[23-Jul-2025 09:47:01 Europe/Berlin] Upload attempt started
+[23-Jul-2025 09:47:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php:259
+Stack trace:
+#0 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(121): generateThumbnail('C:\\xampp\\htdocs...', 'jpg')
+#1 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(324): handleFileUpload()
+#2 {main}
+  thrown in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php on line 259
+[23-Jul-2025 09:47:24 Europe/Berlin] Upload attempt started
+[23-Jul-2025 09:47:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php:259
+Stack trace:
+#0 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(121): generateThumbnail('C:\\xampp\\htdocs...', 'jpg')
+#1 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(324): handleFileUpload()
+#2 {main}
+  thrown in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php on line 259
+[23-Jul-2025 09:48:27 Europe/Berlin] Upload attempt started
+[23-Jul-2025 09:48:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php:263
+Stack trace:
+#0 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(125): generateThumbnail('C:\\xampp\\htdocs...', 'jpg')
+#1 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(328): handleFileUpload()
+#2 {main}
+  thrown in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php on line 263
+[23-Jul-2025 09:48:35 Europe/Berlin] Upload attempt started
+[23-Jul-2025 09:48:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php:263
+Stack trace:
+#0 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(125): generateThumbnail('C:\\xampp\\htdocs...', 'jpg')
+#1 C:\xampp\htdocs\ManagementSistemFile\includes\upload.php(328): handleFileUpload()
+#2 {main}
+  thrown in C:\xampp\htdocs\ManagementSistemFile\includes\upload.php on line 263
+[23-Jul-2025 09:50:23 Europe/Berlin] Upload attempt started
+[23-Jul-2025 09:50:23 Europe/Berlin] File uploaded successfully: ID=16, File=1753257023_728d41e939e00aa3.jpg
+[23-Jul-2025 14:11:59 Europe/Berlin] Upload attempt started
+[23-Jul-2025 14:11:59 Europe/Berlin] File uploaded successfully: ID=17, File=1753272719_2a9771c07c619e61.jpg
+[23-Jul-2025 15:14:35 Europe/Berlin] Upload attempt started
+[23-Jul-2025 15:14:35 Europe/Berlin] File uploaded successfully: ID=19, File=1753276475_785ac75f1fe2a6b1.pdf
+[23-Jul-2025 15:31:05 Europe/Berlin] Upload attempt started
+[23-Jul-2025 15:31:05 Europe/Berlin] File uploaded successfully: ID=20, File=1753277465_6f849a1df03a2c60.png
+[23-Jul-2025 15:33:11 Europe/Berlin] Upload attempt started
+[23-Jul-2025 15:33:11 Europe/Berlin] File uploaded successfully: ID=21, File=1753277591_ebe30a0245fd3d5b.png
+[23-Jul-2025 15:46:22 Europe/Berlin] Upload attempt started
+[23-Jul-2025 15:46:22 Europe/Berlin] File uploaded successfully: ID=22, File=1753278382_44c53ff133436ec9.png

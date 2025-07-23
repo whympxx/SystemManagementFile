@@ -1,0 +1,68 @@
+# Security Configuration for FileManager Pro
+# Main .htaccess file
+
+# Prevent access to sensitive files
+<FilesMatch "\.(ini|log|conf|sql|bak|backup)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to config files
+<Files "*.php~">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+    # Prevent XSS attacks
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Referrer policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Remove server signature
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# File upload size limits
+<IfModule mod_php.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+</IfModule>
+
+# Prevent access to version control files
+<FilesMatch "\.(git|svn|cvs)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Block access to composer files
+<FilesMatch "(composer\.(json|lock)|package\.(json|lock))$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Enable rewrite engine for clean URLs (if needed)
+RewriteEngine On
+
+# Redirect HTTP to HTTPS (uncomment if using HTTPS)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
