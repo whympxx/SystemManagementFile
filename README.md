@@ -108,3 +108,5 @@ storage/app/private/documents/{user}/{tahun}/{bulan}/   lokasi berkas tersimpan
 ```bash
 php artisan test
 ```
+
+Made by [whympxx](https://github.com/whympxx).
